@@ -1,10 +1,23 @@
-import React from 'react';
-import HelloWorld from './Hello'
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <HelloWorld />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          React é uma biblioteca Javascript
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
