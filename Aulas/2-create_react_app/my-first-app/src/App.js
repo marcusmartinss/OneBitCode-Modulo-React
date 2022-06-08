@@ -1,10 +1,10 @@
 import React from 'react';
-import HelloWorld from './Hello'
+import Planets from './components/planets/index'
 
 function App() {
   return (
     <div>
-      <HelloWorld />
+      <Planets />
     </div>
   );
 }
