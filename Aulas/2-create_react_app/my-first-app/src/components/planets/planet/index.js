@@ -4,15 +4,12 @@ import DescriptionWithLink from '../../shared/description_with_link';
 
 const Planet = (props) => {
     const names = ['a', 'b', 'c', 'd', 'e', 'f']
-    const satellites = names.map( (n) =>
-        <li>Satélite {n}</li>
-    )
 
     let title;
 
     if (props.title_with_underline) {
         title = <h4><u>{props.name}</u></h4>
-    } else { 
+    } else {
         title = <h4>{props.name}</h4>
     }
 
@@ -31,7 +28,9 @@ const Planet = (props) => {
             />
             <h4>Satélites</h4>
             <ul>
-                {satellites}
+                {names.map( (n) =>
+                    <li>Satélite {n}</li>
+                )}
             </ul>
             <hr />
         </div>
