@@ -26,12 +26,6 @@ const Planet = (props) => {
                 img_url={props.img_url}
                 gray={props.gray}
             />
-            <h4>Satélites</h4>
-            <ul>
-                {names.map( (n) =>
-                    <li>Satélite {n}</li>
-                )}
-            </ul>
             <hr />
         </div>
     )
